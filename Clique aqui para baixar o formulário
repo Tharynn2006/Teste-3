@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Questionário: Namoro à distância</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; }
+    h1, h2 { color: #C4302B; }
+    .section { margin-bottom: 24px; }
+    .question { margin: 12px 0; }
+    label { display: block; margin-bottom: 4px; }
+    input[type="text"], textarea, select { width: 100%; padding: 8px; margin-bottom: 8px; }
+    .scale { display: flex; gap: 8px; }
+    .scale label { flex: 1; text-align: center; }
+    button { background: #C4302B; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Questionário: Ela é confiável para um namoro à distância?</h1>
+  <p>Responda com sinceridade. Não existe resposta certa, mas ajuda a entender expectativas e valores.</p>
+
+  <form action="#" method="post">
+    <div class="section">
+      <h2>1. Relacionamento com redes sociais</h2>
+      <div class="question">
+        <label>Você costuma conversar com muitas pessoas que conhece pela internet?</label>
+        <select name="q1" required>
+          <option value="">--Escolha--</option>
+          <option value="Sim">Sim</option><option value="Não">Não</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>Já teve algo romântico com alguém que nunca conheceu pessoalmente?</label>
+        <select name="q2" required>
+          <option value="">--Escolha--</option>
+          <option value="Sim">Sim</option><option value="Não">Não</option><option value="Prefiro não dizer">Prefiro não dizer</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>Suas redes sociais são públicas ou privadas?</label>
+        <select name="q3" required>
+          <option value="">--Escolha--</option>
+          <option value="Públicas">Públicas</option><option value="Privadas">Privadas</option><option value="Perfis diferentes">Uso perfis diferentes</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>Você sente necessidade de atenção constante online?</label>
+        <div class="scale">
+          <label>1<br>Raramente<input type="radio" name="q4" value="1" required></label>
+          <label>2<input type="radio" name="q4" value="2"></label>
+          <label>3<input type="radio" name="q4" value="3"></label>
+          <label>4<input type="radio" name="q4" value="4"></label>
+          <label>5<br>Sempre<input type="radio" name="q4" value="5"></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>2. Valores sobre fidelidade</h2>
+      <div class="question">
+        <label>O que você pensa sobre traição em um relacionamento?</label>
+        <textarea name="q5" rows="3" required></textarea>
+      </div>
+      <div class="question">
+        <label>Você acredita que existe “traição emocional” (como flertar)?</label>
+        <select name="q6" required>
+          <option value="">--Escolha--</option>
+          <option value="Sim">Sim</option><option value="Não">Não</option><option value="Depende da situação">Depende da situação</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>Você já traiu alguém no passado? Se sim, por quê?</label>
+        <textarea name="q7" rows="3" required></textarea>
+      </div>
+      <div class="question">
+        <label>Se estivesse insatisfeita num namoro, você terminaria antes de se envolver com outra pessoa?</label>
+        <select name="q8" required>
+          <option value="">--Escolha--</option>
+          <option value="Sim">Sim</option><option value="Não">Não</option><option value="Depende">Depende</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>3. Comunicação e abertura</h2>
+      <div class="question">
+        <label>Você sente que pode contar qualquer coisa para seu parceiro, mesmo dúvidas e medos?</label>
+        <div class="scale">
+          <label>1<input type="radio" name="q9" value="1" required></label>
+          <label>2<input type="radio" name="q9" value="2"></label>
+          <label>3<input type="radio" name="q9" value="3"></label>
+          <label>4<input type="radio" name="q9" value="4"></label>
+          <label>5<input type="radio" name="q9" value="5"></label>
+        </div>
+      </div>
+      <div class="question">
+        <label>Quando algo te incomoda, você guarda pra si ou conversa?</label>
+        <select name="q10" required>
+          <option value="">--Escolha--</option>
+          <option value="Geralmente guardo">Geralmente guardo</option>
+          <option value="Prefiro conversar">Prefiro conversar</option>
+          <option value="Depende">Depende</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>Você se sente confortável mostrando com quem fala e o que faz no dia a dia?</label>
+        <div class="scale">
+          <label>1<input type="radio" name="q11" value="1" required></label>
+          <label>2<input type="radio" name="q11" value="2"></label>
+          <label>3<input type="radio" name="q11" value="3"></label>
+          <label>4<input type="radio" name="q11" value="4"></label>
+          <label>5<input type="radio" name="q11" value="5"></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>4. Interesses e intenções</h2>
+      <div class="question">
+        <label>O que você está buscando agora: algo sério ou conhecer pessoas?</label>
+        <select name="q12" required>
+          <option value="">--Escolha--</option>
+          <option value="Algo sério">Algo sério</option><option value="Conhecer pessoas">Conhecer pessoas</option><option value="Ambos">Ambos</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>Você se vê mantendo um relacionamento à distância por bastante tempo?</label>
+        <select name="q13" required>
+          <option value="">--Escolha--</option>
+          <option value="Sim">Sim</option><option value="Não">Não</option><option value="Talvez">Talvez</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>Se alguém legal se aproximasse pessoalmente, você pensaria em dar chance?</label>
+        <select name="q14" required>
+          <option value="">--Escolha--</option>
+          <option value="Sim">Sim</option><option value="Não">Não</option><option value="Depende">Depende</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>5. Comportamentos recentes</h2>
+      <div class="question">
+        <label>Você já desmarcou chamadas ou sumiu sem explicação?</label>
+        <select name="q15" required>
+          <option value="">--Escolha--</option>
+          <option value="Sim – explico depois">Sim – explico depois</option>
+          <option value="Sim – sem explicar">Sim – sem explicar</option>
+          <option value="Nunca">Nunca</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>Você muda o comportamento quando está sozinha ou em público online?</label>
+        <select name="q16" required>
+          <option value="">--Escolha--</option>
+          <option value="Sim">Sim</option><option value="Não">Não</option><option value="Às vezes">Às vezes</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>Evita mostrar partes da sua vida (amigos, rotina, família)?</label>
+        <select name="q17" required>
+          <option value="">--Escolha--</option>
+          <option value="Sempre">Sempre</option><option value="Às vezes">Às vezes</option><option value="Nunca">Nunca</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>Costuma curtir/comentar posts de outras pessoas com insinuação flertiva?</label>
+        <select name="q18" required>
+          <option value="">--Escolha--</option>
+          <option value="Sim">Sim</option><option value="Não">Não</option><option value="Raramente">Raramente</option>
+        </select>
+      </div>
+    </div>
+
+    <button type="submit">Enviar respostas</button>
+  </form>
+</body>
+</html>
